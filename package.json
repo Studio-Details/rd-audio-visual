@@ -3,22 +3,38 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -H 0.0.0.0",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-three/drei": "^9.105.5",
+    "@react-three/fiber": "^8.16.3",
+    "@types/three": "^0.164.0",
+    "gsap": "^3.12.2",
     "next": "14.2.3",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-use": "^17.4.0",
+    "three": "^0.164.1"
   },
   "devDependencies": {
+    "@types/add": "^2",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "add": "^2.0.6",
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
+    "eslint-config-prettier": "^9.0.0",
+    "glslify-loader": "^2.0.0",
+    "prettier": "^3.1.0",
+    "raw-loader": "^4.0.2",
     "typescript": "^5"
+  },
+  "volta": {
+    "node": "20.12.2",
+    "yarn": "4.1.1"
   }
 }
