@@ -10,7 +10,7 @@ console.log('path', path.resolve(__dirname, './src/glsl'));
 const nextConfig = {
   webpack: (config) => {
     config.module.rules.push({
-      test: /\.(glsl|vs|fs|vert|frag)$/,
+      test: /\.(glsl|vert|frag)$/,
       use: [
         'raw-loader',
         {
