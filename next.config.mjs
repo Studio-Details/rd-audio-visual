@@ -8,6 +8,7 @@ const __dirname = path.dirname(__filename);
 console.log('path', path.resolve(__dirname, './src/glsl'));
 
 const nextConfig = {
+  output: 'export',
   webpack: (config) => {
     config.module.rules.push({
       test: /\.(glsl|vert|frag)$/,
