@@ -25,7 +25,7 @@ const useSetKey = ({
       isFlag.current = false
       onKeyUp()
     }
-  }, [isPressed, onKeyPress, onKeyUp])
+  }, [isPressed])
 }
 
 export default useSetKey

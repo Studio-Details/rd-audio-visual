@@ -40,7 +40,7 @@ const KeySound = ({
     analyser.connect(ctx.destination)
     osc.current.start(0)
     startTick(keyType)
-  }, [ctx, analyser, freq, type, gain, keyType, startTick])
+  }, [ctx, analyser])
 
   const stop = useCallback(() => {
     if (!ctx || !analyser) return
@@ -49,7 +49,7 @@ const KeySound = ({
     osc.current = null
     gainNode.current = null
     stopTick(keyType)
-  }, [ctx, analyser, keyType, stopTick])
+  }, [ctx, analyser])
 
   useSetKey({
     keyType,
