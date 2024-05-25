@@ -40,7 +40,7 @@ const TestVisual = () => {
     }
     useFrame((state) => {
       const material = ref.current.material as THREE.ShaderMaterial;
-      console.log(state.clock)
+      // console.log(state.clock)
       if (material) {
         // console.log(material.uniforms.uPixels.value)
         material.uniforms.uTime.value = state.clock.getElapsedTime();
